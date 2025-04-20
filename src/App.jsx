@@ -1,19 +1,20 @@
-import './App.css'
 
-export default function App() {
-    const items = ["item1", "item2", "items", "item4"];
+import React from 'react';
+import {Component} from 'react';
+import './App.css';
+import Header from "./Components/Orders/Header.jsx";
+import Footer from "./Components/Orders/Footer.jsx";
+import OrderMainMenu from "./Components/Orders/OrderContent.jsx";
 
-    return (
-        <div>
-            <h1>Список элементов</h1>
-            <ul>
-                {items.map((item, index) => (
-                    <li key={index}>{item}</li>
-                ))}
-            </ul>
-
-        </div>
-    );
+export default class App extends Component {
+    render() {
+        return (
+            <>
+                <Header/>
+                <OrderMainMenu/>
+                <Footer/>
+            </>
+        )
+    }
 }
-
 
