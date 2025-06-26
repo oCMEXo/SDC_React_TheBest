@@ -4,12 +4,13 @@ import HomeComponent from "../Components/ContentMenu/HomeComponent";
 import Footer from "../Components/Layout/Footer";
 
 
+
 const Home: React.FC = () => {
 
 
     return (
         <>
-            <Header />
+            <Header/>
             <HomeComponent />
             <Footer />
         </>
